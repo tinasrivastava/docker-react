@@ -13,9 +13,9 @@ deploy:
   region: "ap-south-1"
   app: "dockerapp"
   env: "Dockerapp-env-1"
+  on:
+    branch: master
   bucket_name: "elasticbeanstalk-ap-south-1-202181106752"
   bucket_path: "dockerapp"
-  on:
-   branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
